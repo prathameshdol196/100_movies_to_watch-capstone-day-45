@@ -3,7 +3,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-response = requests.get("https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/")
+response = requests.get("https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/")  # website to be scraped
 webpage = response.text
 
 soup = BeautifulSoup(webpage, "html.parser")  # created a soup
